@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: run-pipeline
+    env: python
+    schedule: "0 3 * * *"
+    plan: free
+    startCommand: "python3 bot/run_pipeline.py"
